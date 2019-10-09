@@ -3,15 +3,15 @@ import {Menu,Button,Dropdown} from 'semantic-ui-react';
 
 const Navbar = (props) =>{
     return(
-        <Menu size='small' className='MenuClass'>
-        <Menu.Item className='homeSection'
+        <Menu size='small' data-test='MenuClass' className='MenuClass'>
+        <Menu.Item data-test='homeSection' className='homeSection'
           name='home'
         />
-        <Menu.Item className='messageSection'
+        <Menu.Item data-test='messageSection' className='messageSection'
           name='messages'
         />
 
-        <Menu.Menu position='right' className='dropDownSection'>
+        <Menu.Menu position='right' data-test='dropDownSection' className='dropDownSection'>
           <Dropdown item text='Language'>
             <Dropdown.Menu>
               <Dropdown.Item>English</Dropdown.Item>
@@ -20,7 +20,7 @@ const Navbar = (props) =>{
             </Dropdown.Menu>
           </Dropdown>
 
-          <Menu.Item className='signupSection'>
+          <Menu.Item data-test='signupSection' className='signupSection'>
             <Button primary>Sign Up</Button>
           </Menu.Item>
         </Menu.Menu>
