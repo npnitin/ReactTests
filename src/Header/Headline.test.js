@@ -48,12 +48,12 @@ describe('Headline Component',()=>{
             const wrapper = findByTestAtrr(component,'HeadlineComponent');
             expect(wrapper.length).toBe(1);
         })
-        it('Should render header',()=>{
+        it('Should not render header',()=>{
             const wrapper = findByTestAtrr(component,'header');
             expect(wrapper.length).toBe(0);
         })
 
-        it('Should render description',()=>{
+        it('Should not render description',()=>{
             const wrapper = findByTestAtrr(component,'desc');
             expect(wrapper.length).toBe(0);
         })
