@@ -1,5 +1,6 @@
 import React from 'react';
 import {Menu,Button,Dropdown} from 'semantic-ui-react';
+import Headline from '../Header/Headline';
 
 const Navbar = (props) =>{
     return(
@@ -10,7 +11,7 @@ const Navbar = (props) =>{
         <Menu.Item data-test='messageSection' className='messageSection'
           name='messages'
         />
-
+        <Headline header='Test App' desc='This is the description for demo app'/>
         <Menu.Menu position='right' data-test='dropDownSection' className='dropDownSection'>
           <Dropdown item text='Language'>
             <Dropdown.Menu>
